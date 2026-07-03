@@ -11,6 +11,11 @@ old=""
 if os.path.exists("state.txt"): old=open("state.txt").read().strip()
 if h!=old:
     if true:
-        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-        data={"chat_id":CHAT,"text":"RSAH Council website updated: "+URL})
+        response = requests.post(
+    f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+    data={"chat_id": CHAT, "text": "TEST MESSAGE FROM GITHUB"}
+)
+
+print(response.status_code)
+print(response.text)
     open("state.txt","w").write(h)
