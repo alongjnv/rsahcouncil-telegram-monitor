@@ -10,7 +10,7 @@ h=hashlib.sha256(text.encode()).hexdigest()
 old=""
 if os.path.exists("state.txt"): old=open("state.txt").read().strip()
 if h!=old:
-    if old:
+    if true:
         requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
         data={"chat_id":CHAT,"text":"RSAH Council website updated: "+URL})
     open("state.txt","w").write(h)
