@@ -1,1 +1,1 @@
-Add BOT_TOKEN and CHAT_ID as GitHub Secrets, then enable Actions.
+JNV
